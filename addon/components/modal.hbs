@@ -1,0 +1,9 @@
+{{#let
+  (hash
+    header=(or component @myCom "modal/header" onClose=@onClose)
+    body=(component "modal/body")
+  )
+  as |MODAL|
+}}
+  {{yield MODAL}}
+{{/let}}
